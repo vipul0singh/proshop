@@ -11,6 +11,9 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+//Body parser middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
