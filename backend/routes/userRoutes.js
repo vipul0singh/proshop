@@ -1,5 +1,4 @@
 import express from 'express';
-const router = express.Router();
 import {  authUsers,
   registerUser,
   logoutUser,
@@ -9,7 +8,8 @@ import {  authUsers,
   getUserById,
   deleteUser,
   updateUser } from '../controllers/userController.js';
-import { protect, admin } from '../middleware/authMiddleware.js';
+  import { protect, admin } from '../middleware/authMiddleware.js';
+  const router = express.Router();
 
 
 
